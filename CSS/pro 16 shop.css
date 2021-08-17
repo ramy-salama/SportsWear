@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
 :root {
-    --green: #f1a746;
+    --orange: #f1a746;
     --black: #192a56;
     --light-color: #666;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1)
@@ -36,7 +36,7 @@ section:nth-child(even) {
 
 .sub-heading {
     text-align: center;
-    color: var(--green);
+    color: var(--orange);
     font-size: 2rem;
     padding-top: 1rem;
 }
@@ -62,10 +62,60 @@ section:nth-child(even) {
 }
 
 .btn:hover {
-    background: var(--green);
+    background: var(--orange);
     letter-spacing: .1rem;
 }
 /* End Gloobl Style */
+
+main {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1010;
+    background: linear-gradient(140deg, #666, #fff);
+}
+
+.hidden{
+    display: none;
+}
+
+main .frontend {
+    width: 80%;
+    margin: 5rem auto;
+    border-radius: 2.5rem;
+    background: linear-gradient(140deg, #fff, #666);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+main .frontend .image img {
+    width: 100%;
+}
+
+main .frontend .title1 img{
+    width: 70%;
+}
+
+main .frontend .title1 h1 {
+    font-size: 4rem;
+    color: var(--black);
+}
+
+main .frontend .title1 span {
+    font-size: 3rem;
+    color: rgb(245, 113, 6);
+    padding-top: 2rem;
+}
+
+main .frontend .title1 p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: var(--light-color);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
 /*Header Section Start*/
 header {
@@ -87,7 +137,7 @@ header .logo {
 }
 
 header .logo i {
-    color: var(--green);
+    color: var(--orange);
 }
 
 header .navbar a {
@@ -100,7 +150,7 @@ header .navbar a {
 header .navbar a.active,
 header .navbar a:hover {
     color: #fff;
-    background-color: var(--green);
+    background-color: var(--orange);
 }
 
 header .icons i,
@@ -120,7 +170,7 @@ header .icons a {
 header .icons i:hover,
 header .icons a:hover {
     color: #fff;
-    background-color: var(--green);
+    background-color: var(--orange);
     transform: rotate(360deg);
 }
 
@@ -180,7 +230,7 @@ header .icons #Showroom-bars {
 }
 
 .sliders .slide-show .title-cont .title span {
-    color: var(--green);
+    color: var(--orange);
     font-size: 2.5rem;
 }
 
@@ -240,7 +290,7 @@ header .icons #Showroom-bars {
 
 #search-from #close:hover,
 #search-from label:hover {
-    color: var(--green);
+    color: var(--orange);
 }
 
 #search-from #close {
@@ -274,7 +324,7 @@ header .icons #Showroom-bars {
 }
 
 .home .home-slider .slide .content span {
-    color: var(--green);
+    color: var(--orange);
     font-size: 2rem;
 }
 
@@ -291,7 +341,7 @@ header .icons #Showroom-bars {
 }
 
 .swiper-pagination-bullet-active{
-    background: var(--green);
+    background: var(--orange);
 }
 /* End Section Home */
 
@@ -328,7 +378,7 @@ header .icons #Showroom-bars {
 }
 
 .special .box-container .box .fa-eye:hover {
-    background: var(--green);
+    background: var(--orange);
     color: #fff;
 }
 
@@ -351,11 +401,11 @@ header .icons #Showroom-bars {
 
 .special .box-container .box .stars i{
     font-size: 1.7rem;
-    color: var(--green);
+    color: var(--orange);
 }
 
 .special .box-container .box span {
-    color: var(--green);
+    color: var(--orange);
     font-weight: bolder;
     margin-right: 1rem;
     font-size: 2.5rem;
@@ -417,7 +467,7 @@ header .icons #Showroom-bars {
 
 .shirts .row .content .icons-container .icons i {
     font-size: 2rem;
-    color: var(--green);
+    color: var(--orange);
 }
 
 .shirts .row .content .icons-container .icons span {
@@ -470,7 +520,7 @@ header .icons #Showroom-bars {
 }
 
 .Showroom .box-container .box .image .fa-heart:hover {
-    background-color: var(--green);
+    background-color: var(--orange);
     color: #fff;
 }
 
@@ -485,7 +535,7 @@ header .icons #Showroom-bars {
 
 .Showroom .box-container .box .content .stars i {
     font-size: 1.7rem;
-    color: var(--green);
+    color: var(--orange);
 }
 
 .Showroom .box-container .box .content h3 {
@@ -501,7 +551,7 @@ header .icons #Showroom-bars {
 }
 
 .Showroom .box-container .box .content .price {
-    color: var(--green);
+    color: var(--orange);
     font-size: 2.5rem;
     margin-left: 1rem;
 }
@@ -544,7 +594,7 @@ header .icons #Showroom-bars {
 }
 
 .review .slide .user i {
-    color: var(--green);
+    color: var(--orange);
     font-size: 1.3rem;
 }
 
@@ -597,7 +647,7 @@ header .icons #Showroom-bars {
 
 .order form .input-box .input input:focus,
 .order form .input-box .input textarea:focus {
-    border: .1rem solid var(--green);
+    border: .1rem solid var(--orange);
 }
 
 .order form .input-box .input textarea {
@@ -632,7 +682,7 @@ header .icons #Showroom-bars {
 }
 
 .footer .box-container .box a:hover {
-    color: var(--green);
+    color: var(--orange);
     text-decoration: underline;
 }
 
@@ -647,7 +697,7 @@ header .icons #Showroom-bars {
 }
 
 .footer .credit span {
-    color: var(--green);
+    color: var(--orange);
 }
 /*End Section Footer */
 

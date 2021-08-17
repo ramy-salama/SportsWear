@@ -1,3 +1,10 @@
+//main
+document.querySelector('#btn1').onclick = () =>{
+    document.querySelector('#main').classList.add('hidden');
+}
+
+
+
 // Nav Bar
 let menu = document.querySelector('#menu-bars'),
     navbar = document.querySelector('.navbar');
